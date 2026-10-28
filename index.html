@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня «Капучино & Ко» | Атмосферное место</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #1a1512;
+            color: #f4eae1;
+            line-height: 1.6;
+            padding-top: 60px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        nav {
+            background-color: rgba(26, 21, 18, 0.95);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid #332720;
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #d4a373;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #f4eae1;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d4a373;
+        }
+
+        header {
+            background: linear-gradient(rgba(26, 21, 18, 0.5), rgba(26, 21, 18, 0.95)), 
+                        url('https://unsplash.com') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: #d4a373;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #e6dfd9;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #d4a373;
+            color: #1a1512;
+            padding: 14px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(212, 163, 115, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e6b88a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 163, 115, 0.5);
+        }
+
+        h2.section-title {
+            font-size: 2.2rem;
+            color: #d4a373;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        h2.section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #d4a373;
+            margin: 10px auto 0 auto;
+        }
+
+        .about-section {
+            text-align: center;
+            background-color: #231c18;
+            padding: 60px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #e6dfd9;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">☕ Капучино & Ко</a>
+            <div class="nav-links">
+                <a href="#about">О нас</a>
+                <a href="menu.html">Меню</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <h1>Капучино & Ко</h1>
+            <p>Кофе, который согревает душу и вдохновляет на великие дела</p>
+            <a href="menu.html" class="btn">Смотреть меню</a>
+        </div>
+    </header>
+
+    <div class="container" id="about">
+        <section class="about-section">
+            <h2 class="section-title">О нашей атмосфере</h2>
+            <p>Мы обжариваем зерна вручную и создаем место, куда хочется возвращаться. Свежая выпечка каждое утро, быстрый Wi-Fi для работы и мягкий джаз на фоне. Заходите за своей идеальной чашкой кофейного удовольствия!</p>
+        </section>
+    </div>
+    <section class="reviews-section" id="reviews" style="background-color: #1e1815; padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Что говорят гости</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                <div style="background-color: #231c18; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                    <div style="color: #d4a373; margin-bottom: 10px; font-size: 1.2rem;">★★★★★</div>
+                    <p style="font-style: italic; color: #e6dfd9; margin-bottom: 15px;">"Самый лучший Раф в городе! Атмосфера очень уютная, часто прихожу сюда поработать с ноутбуком."</p>
+                    <div style="font-weight: bold; color: #a89a90; font-size: 0.9rem;">— Анна К.</div>
+                </div>
+                <div style="background-color: #231c18; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                    <div style="color: #d4a373; margin-bottom: 10px; font-size: 1.2rem;">★★★★★</div>
+                    <p style="font-style: italic; color: #e6dfd9; margin-bottom: 15px;">"Круассаны просто тают во рту. Приветливые бариста всегда поднимут настроение с утра."</p>
+                    <div style="font-weight: bold; color: #a89a90; font-size: 0.9rem;">— Влад Т.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="contacts">
+        <h2 class="section-title">Где нас найти</h2>
+        <div style="text-align: center; font-size: 1.1rem; color: #e6dfd9;">
+            <p style="margin-bottom: 15px;"><strong>Адрес:</strong> г. Москва, ул. Кофейная, д. 12</p>
+            <p style="margin-bottom: 15px;"><strong>Время работы:</strong> Ежедневно с 08:00 до 22:00</p>
+            <p style="margin-bottom: 15px;"><strong>Телефон для заказа:</strong> <a href="tel:+79991234567" style="color: #d4a373; text-decoration: none; font-weight: bold;">+7 (999) 123-45-67</a></p>
+        </div>
+    </div>
+
+    <footer style="background-color: #110e0c; text-align: center; padding: 40px 20px; border-top: 1px solid #231c18; color: #666; font-size: 0.9rem;">
+        &copy; 2026 Капучино & Ко. Все права защищены.
+    </footer>
+
+</body>
+</html>

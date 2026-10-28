@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню | Кофейня «Капучино & Ко»</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #1a1512;
+            color: #f4eae1;
+            line-height: 1.6;
+            padding-top: 80px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        nav {
+            background-color: rgba(26, 21, 18, 0.95);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid #332720;
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #d4a373;
+            text-decoration: none;
+        }
+
+        .back-btn {
+            color: #d4a373;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #e6b88a;
+        }
+
+        h1.page-title {
+            font-size: 2.5rem;
+            color: #d4a373;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            color: #a89a90;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        h2.category-title {
+            font-size: 1.8rem;
+            color: #d4a373;
+            margin: 40px 0 20px 0;
+            border-bottom: 1px solid #332720;
+            padding-bottom: 10px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-item {
+            background-color: #231c18;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #d4a373;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .menu-item-info h3 {
+            color: #f4eae1;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .menu-item-info p {
+            font-size: 0.9rem;
+            color: #a89a90;
+            margin-bottom: 8px;
+        }
+
+        .volume {
+            display: inline-block;
+            font-size: 0.8rem;
+            background: rgba(244, 234, 225, 0.1);
+            padding: 2px 8px;
+            border-radius: 10px;
+            color: #e6dfd9;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #d4a373;
+            background: rgba(212, 163, 115, 0.1);
+            padding: 6px 14px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">☕ Капучино & Ко</a>
+            <a href="index.html" class="back-btn">← На главную</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Наше Изысканное Меню</h1>
+        <p class="page-subtitle">Авторские напитки премиум-класса и свежайшие десерты от шеф-кондитера</p>
+
+        <!-- Категория: Напитки -->
+        <h2 class="category-title">Кофейные шедевры & Напитки</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Доппио (Двойной Эспрессо)</h3>
+                    <p>Чистая энергия из отборной высокогорной арабики</p>
+                    <span class="volume">60 мл</span>
+                </div>
+                <div class="price">290 ₽</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Капучино Мадагаскар</h3>
+                    <p>С натуральной стручковой ванилью и пышной пеной</p>
+                    <span class="volume">350 мл</span>
+                </div>
+                <div class="price">420 ₽</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Фирменный Раф Лаванда</h3>
+                    <p>Нежнейший сливочный вкус с тонкими нотками цветов прованса</p>
+                    <span class="volume">400 мл</span>
+                </div>
+                <div class="price">480 ₽</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Флэт Уайт на миндальном</h3>
+                    <p>Двойной шот эспрессо и шелковистое органическое молоко</p>
+                    <span class="volume">250 мл</span>
+                </div>
+                <div class="price">450 ₽</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Матча Латте Церемониальный</h3>
+                    <p>Премиальный японский чай матча высшего грейда</p>
+                    <span class="volume">350 мл</span>
+                </div>
+                <div class="price">490 ₽</div>
+            </div>
+        </div>
+
+        <!-- Категория: Выпечка и Десерты -->
+        <h2 class="category-title">Пирожные & Свежая выпечка</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Круассан с миндальным кремом</h3>
+                    <p>Классическая французская выпечка с начинкой из марципана</p>
+                </div>
+                <div class="price">320 ₽</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Фирменный Чизкейк Сан-Себастьян</h3>
+                    <p>Нежный обожженный крем-чиз с карамельной корочкой</p>
+                </div>
+                <div class="price">540 ₽</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Торт Фисташка-Малина</h3>
+                    <p>Муссовое пирожное со свежими ягодами малины и фисташковым бисквитом</p>
+                </div>
+                <div class="price">590 ₽</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Пирожное Эклер Шоколадный премиум</h3>
+                    <p>Заварной крем на основе бельгийского темного шоколада</p>
+                </div>
+                <div class="price">380 ₽</div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: #110e0c; text-align: center; padding: 40px 20px; border-top: 1px solid #231c18; color: #666; font-size: 0.9rem; margin-top: 60px;">
+        &copy; 2026 Капучино & Ко. Все права защищены.
+    </footer>
+
+</body>
+</html>
